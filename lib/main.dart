@@ -40,46 +40,39 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 2.5),
                 ),
               ),
-              Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.all(20.0), //Outside the container border
-                  padding: EdgeInsets.all(20.0), //Between border and child
-                  color: Colors.white,
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(
-                        //Use to make space in the row
-                        width: 25.0,
-                      ),
-                      Text(
-                        '+1 (904) 785-5838',
-                        style: TextStyle(fontSize: 18.0),
-                      ),
-                    ],
-                  )),
-              Container(
-                width: double.infinity,
-                margin: EdgeInsets.all(20.0), //Outside the container border
-                padding: EdgeInsets.all(20.0), //Between border and child
+              Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ), //Outside the container border
                 color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 25.0,
-                    ),
-                    Text(
-                      'contact@fritzgt.com',
-                      style: TextStyle(fontSize: 18.0),
-                    )
-                  ],
+
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '+1 (904) 785-5838',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ), //Outside the container border
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'contact@fritzgt.com',
+                    style: TextStyle(fontSize: 18.0),
+                  ),
                 ),
               ),
             ],
