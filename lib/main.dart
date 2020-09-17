@@ -12,13 +12,20 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.green,
         body: SafeArea(
-          child: Container(
-            width: 100.0,
-            height: 100.0,
-            margin: EdgeInsets.all(20.0), //Outside the container border
-            padding: EdgeInsets.all(20.0), //Between border and child
-            color: Colors.white,
-            child: Text('Hello'),
+          child: Column(
+            children: [
+              CircleAvatar(
+                backgroundImage: AssetImage('images/webpic.jpg'),
+              ),
+              Container(
+                width: 100.0,
+                height: 100.0,
+                margin: EdgeInsets.all(20.0), //Outside the container border
+                padding: EdgeInsets.all(20.0), //Between border and child
+                color: Colors.white,
+                child: Text('Hello'),
+              ),
+            ],
           ),
         ),
       ),
