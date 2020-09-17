@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,14 +10,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 50.0,
+                radius: 60.0,
                 backgroundImage: AssetImage('images/webpic.jpg'),
               ),
               Container(
@@ -27,16 +25,19 @@ class MyApp extends StatelessWidget {
                 child: Text(
                   'Fritz Gamboa',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 40.0,
-                  ),
+                      color: Colors.white,
+                      fontSize: 40.0,
+                      fontFamily: 'Pacifico'),
                 ),
               ),
               Container(
-                margin: EdgeInsets.all(20.0),
                 child: Text(
                   'FLUTTER DEVELOPER.',
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontFamily: 'SourceSansPro',
+                      letterSpacing: 2.5),
                 ),
               ),
               Container(
